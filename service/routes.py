@@ -98,7 +98,18 @@ def get_accounts(account_id):
 # UPDATE AN EXISTING ACCOUNT
 ######################################################################
 
-# ... place you code here to UPDATE an account ...
+def update_accounts(account_id):
+        """
+        Update an Account
+        This endpoint will update an Account based on the posted data
+        """
+        app.logger.info("Request to update an Account with id: %s", account_id)
+        # use the Account.find() method to retrieve the account by the account_id
+        # abort() with a status.HTTP_404_NOT_FOUND if it cannot be found
+        # call the deserialize() method on the account passing in request.get_json()
+        # call account.update() to update the account with the new data
+        # return the serialize() version of the account with a return code of status.HTTP_200_OK
+        return {account as json + 200}
 
 
 ######################################################################
